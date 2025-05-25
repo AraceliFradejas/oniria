@@ -1,93 +1,106 @@
-# Oniria - Landing Page de Floristería / Flower Shop Landing Page
+💐 Oniria - Landing Page de Floristería / Flower Shop Landing Page
 
-## Español
+📌 Español
+🌸 Descripción
+Este proyecto es una landing page para “Oniria - Flores & Lovers”, una floristería ficticia orientada a experiencias emocionales y personalizadas. Su objetivo es atraer usuarios, mostrar productos y servicios, y facilitar pedidos online con un diseño moderno, cálido y profesional.
 
-### Descripción
-Este proyecto es una landing page para "Oniria - Flores & Lovers", una floristería ficticia. El objetivo de la página es atraer clientes, mostrar los productos y servicios, y facilitar la personalización y el pedido de arreglos florales.
+✍️ Desarrollada por Araceli Fradejas Muñoz como parte del Trabajo Final de la asignatura E-Commerce del Máster en Marketing Digital y Analytics + Máster en IA Empresarial de la escuela ENEB (Mayo 2025).
 
-Ha sido desarrollada por Araceli Fradejas Muñoz como parte de la entrega del Trabajo Final de la Asignatura de E-Commerce del Máster en Marketing Digital y Analytics + Máster en IA Empresarial de la escuela ENEB (Mayo 2025).
+✨ Características Principales
+🎨 Diseño moderno y emocional con colores cálidos e imágenes florales.
 
-### Características Principales
-- **Diseño Atractivo y Moderno:** Interfaz limpia con una paleta de colores cálidos y elementos visuales relacionados con flores.
-- **Sección Hero:** Con un título llamativo, subtítulo descriptivo y un botón de llamada a la acción (CTA) para guiar al usuario.
-- **Prueba Social:** Sección de calificación con estrellas y número de reseñas para generar confianza.
-- **Formulario de Personalización Interactivo:** Permite a los usuarios seleccionar fecha de entrega, añadir un mensaje personalizado, e ingresar sus datos para el pedido.
-- **Testimonial:** Cita de un cliente satisfecho para reforzar la calidad del servicio.
-- **Elementos Flotantes:** Animaciones sutiles de flores para mejorar la estética.
-- **Botón de WhatsApp Flotante:** Para contacto directo y rápido.
-- **Footer Completo:** Incluye logo, descripción, enlaces a redes sociales (simulados), listado de servicios, información de la empresa y datos de contacto.
-- **Disclaimer Académico:** Nota aclaratoria sobre el propósito del proyecto.
-- **Responsive Design:** Adaptable a diferentes tamaños de pantalla (escritorio, tableta y móvil).
-- **Interactividad:** Efecto de máquina de escribir en el título principal y animaciones en botones.
+💬 Sección Hero con título animado tipo "máquina de escribir" y botón de llamada a la acción (CTA).
 
-### Tecnologías Utilizadas
-- **HTML5:** Para la estructura semántica del contenido.
-- **CSS3:** Para el diseño, la presentación visual, animaciones y responsive design (estilos directamente en el archivo HTML).
-- **JavaScript:** Para la interactividad como el efecto de máquina de escribir en el título, la animación de "ripple" en los botones y la alerta de envío del formulario.
+⭐ Prueba social con estrellas y número de reseñas.
 
-### Cómo Visualizar el Proyecto
-1.  **Descargar o Clonar el Repositorio:**
-    Obtén los archivos del proyecto en tu máquina local.
-2.  **Abrir directamente en el Navegador:**
-    Navega hasta la carpeta del proyecto y abre el archivo `flower_landing.html` en tu navegador web preferido (Chrome, Firefox, Safari, Edge, etc.).
-3.  **Usar un Servidor Local (Recomendado para una experiencia completa):**
-    Si tienes Python instalado, puedes ejecutar un servidor local simple:
-    ```bash
-    # Navega a la carpeta raíz del proyecto en tu terminal
-    cd ruta/a/la/carpeta/del/proyecto/oniria
-    # Ejecuta el servidor (Python 3)
-    python3 -m http.server
-    ```
-    Luego, abre `http://localhost:8000/flower_landing.html` en tu navegador (el puerto puede variar si el 8000 está en uso).
+📅 Formulario interactivo con selección de fecha, mensaje personalizado y datos del pedido.
 
-### Autora
-- **Araceli Fradejas Muñoz**
-- **Contexto:** Trabajo Final de la Asignatura de E-Commerce del Máster en Marketing Digital y Analytics + Máster en IA Empresarial de la escuela ENEB.
-- **Fecha:** Mayo 2025
+💬 Testimonial realista para reforzar la confianza.
 
----
+🌺 Animaciones sutiles flotantes con flores.
 
-## English
+📲 Botón flotante de WhatsApp para contacto inmediato.
 
-### Description
-This project is a landing page for "Oniria - Flores & Lovers," a fictional flower shop. The page aims to attract customers, showcase products and services, and facilitate the customization and ordering of floral arrangements.
+📦 Footer completo con redes sociales simuladas, servicios, contacto y aviso académico.
 
-It has been developed by Araceli Fradejas Muñoz as part of the Final Project for the E-Commerce subject of the Master in Digital Marketing and Analytics + Master in Business AI at ENEB School (May 2025).
+📱 Diseño responsive para móvil, tablet y escritorio.
 
-### Key Features
-- **Attractive and Modern Design:** Clean interface with a warm color palette and floral-related visual elements.
-- **Hero Section:** Features a catchy title, descriptive subtitle, and a call-to-action (CTA) button to guide the user.
-- **Social Proof:** Rating section with stars and number of reviews to build trust.
-- **Interactive Customization Form:** Allows users to select a delivery date, add a personalized message, and enter their details for the order.
-- **Testimonial:** Quote from a satisfied customer to reinforce service quality.
-- **Floating Elements:** Subtle flower animations to enhance aesthetics.
-- **Floating WhatsApp Button:** For direct and quick contact.
-- **Comprehensive Footer:** Includes logo, description, social media links (simulated), list of services, company information, and contact details.
-- **Academic Disclaimer:** A note clarifying the project's purpose.
-- **Responsive Design:** Adaptable to different screen sizes (desktop, tablet, and mobile).
-- **Interactivity:** Typewriter effect on the main title and ripple animations on buttons.
+⚙️ Interactividad con JavaScript: animaciones, efectos y alerta de formulario.
 
-### Technologies Used
-- **HTML5:** For the semantic structure of the content.
-- **CSS3:** For design, visual presentation, animations, and responsive design (styles directly in the HTML file).
-- **JavaScript:** For interactivity such as the typewriter effect on the title, ripple animation on buttons, and form submission alert.
+🛠️ Tecnologías Utilizadas
+Tecnología	Función
+HTML5	Estructura semántica del contenido
+CSS3	Estilos visuales, responsive y animaciones
+JavaScript	Efectos dinámicos y acciones del formulario
 
-### How to View the Project
-1.  **Download or Clone the Repository:**
-    Get the project files onto your local machine.
-2.  **Open Directly in Browser:**
-    Navigate to the project folder and open the `flower_landing.html` file in your preferred web browser (Chrome, Firefox, Safari, Edge, etc.).
-3.  **Use a Local Server (Recommended for a complete experience):**
-    If you have Python installed, you can run a simple local server:
-    ```bash
-    # Navigate to the project's root folder in your terminal
-    cd path/to/your/project/folder/oniria
-    # Run the server (Python 3)
-    python3 -m http.server
-    ```
-    Then, open `http://localhost:8000/flower_landing.html` in your browser (the port may vary if 8000 is in use).
+🚀 Cómo visualizar el proyecto
+Descargar o clonar el repositorio
 
-### Author
-- **Araceli Fradejas Muñoz**
-- **Context:** Final Project for the E-Commerce subject of the Master in Digital Marketing and Analytics + Master in Business AI at ENEB School.
-- **Date:** May 2025
+Abrir flower_landing.html en tu navegador (Chrome, Firefox, etc.)
+
+(Opcional) Servidor local con Python:
+
+bash
+Copiar
+Editar
+cd ruta/a/la/carpeta/del/proyecto/oniria
+python3 -m http.server
+Luego abre http://localhost:8000/flower_landing.html
+
+👩‍💻 Autora
+Araceli Fradejas Muñoz
+📚 Máster en Marketing Digital y Analytics + Máster en IA Empresarial (ENEB)
+📆 Mayo 2025
+
+🌍 English
+🌷 Description
+This project is a landing page for “Oniria - Flores & Lovers,” a fictional flower shop focused on emotionally driven and customizable experiences. Its goal is to attract users, showcase offerings, and streamline floral orders with a modern and engaging design.
+
+✍️ Developed by Araceli Fradejas Muñoz as part of the Final Project for the E-Commerce subject of the Master in Digital Marketing and Analytics + Master in Business AI at ENEB School (May 2025).
+
+✨ Key Features
+🎨 Modern & emotional design with warm colors and floral visuals
+
+💬 Hero section with typewriter effect and CTA button
+
+⭐ Social proof with star ratings and reviews
+
+📅 Interactive form for delivery date, message, and order details
+
+💬 Testimonial to build trust
+
+🌺 Subtle floating animations with flowers
+
+📲 Floating WhatsApp button for instant contact
+
+📦 Full footer with (simulated) social links, services, contact, and academic note
+
+📱 Responsive design for all devices
+
+⚙️ JavaScript-powered interactivity
+
+🛠️ Technologies Used
+Technology	Purpose
+HTML5	Semantic structure
+CSS3	Visual styles, responsive layout, animations
+JavaScript	Dynamic effects and form interaction
+
+🚀 How to View the Project
+Download or clone the repository
+
+Open flower_landing.html in your browser (Chrome, Firefox, etc.)
+
+(Optional) Use a local Python server:
+
+bash
+Copiar
+Editar
+cd path/to/your/project/folder/oniria
+python3 -m http.server
+Then open http://localhost:8000/flower_landing.html
+
+👩‍💻 Author
+Araceli Fradejas Muñoz
+📚 Master in Digital Marketing and Analytics + Master in Business AI (ENEB)
+📆 May 2025
+
