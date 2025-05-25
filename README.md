@@ -1,4 +1,9 @@
 # 💐 Oniria - Landing Page de Floristería / Flower Shop Landing Page
+
+![Logo de Oniria](https://github.com/AraceliFradejas/oniria/blob/main/assets/oniria.png)
+
+**Oniria - Flores & Lovers** es una floristería ficticia con una propuesta digital fresca, emocional y centrada en la experiencia del usuario. Este proyecto forma parte del Trabajo Final de la asignatura de E-Commerce del Máster en Marketing Digital y Analytics + Máster en IA Empresarial de la escuela ENEB (Mayo 2025).
+
 ---
 
 ## 📌 Español
@@ -46,6 +51,13 @@ Este proyecto es una landing page para **"Oniria - Flores & Lovers"**, una flori
    python3 -m http.server
    ```
    Luego abre: http://localhost:8000/flower_landing.html
+
+---
+
+## 📺 Demo en Vídeo
+
+- [🎥 Versión Escritorio - YouTube](https://youtu.be/VKTmpexWQUg)
+- [📱 Versión Móvil - YouTube Shorts](https://www.youtube.com/shorts/zgBGLahRxfg)
 
 ---
 
@@ -102,6 +114,13 @@ This project is a landing page for **"Oniria - Flores & Lovers,"** a fictional f
    python3 -m http.server
    ```
    Then open: http://localhost:8000/flower_landing.html
+
+---
+
+## 📺 Video Demo
+
+- [🎥 Desktop - YouTube](https://youtu.be/VKTmpexWQUg)
+- [📱 Mobile - YouTube Shorts](https://www.youtube.com/shorts/zgBGLahRxfg)
 
 ---
 
