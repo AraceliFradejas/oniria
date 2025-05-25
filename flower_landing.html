@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Díselo con flores - Personaliza y sorprende</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #f5f1eb 0%, #ede5d8 100%);
+            min-height: 100vh;
+            color: #4a4947;
+        }
+
+        .logo-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .hero-section {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .main-title {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 300;
+            color: #d4837a;
+            margin-bottom: 10px;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            color: #6b7280;
+            margin-bottom: 30px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-button {
+            background: linear-gradient(135deg, #d4837a 0%, #c67169 100%);
+            color: white;
+            padding: 18px 40px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(212, 131, 122, 0.3);
+            margin-bottom: 40px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 35px rgba(212, 131, 122, 0.4);
+        }
+
+        .rating-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 60px;
+            flex-wrap: wrap;
+        }
+
+        .google-logo {
+            font-weight: bold;
+            color: #4285f4;
+            font-size: 1.2rem;
+        }
+
+        .rating-stars {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .stars {
+            color: #fbbf24;
+            font-size: 1.2rem;
+        }
+
+        .rating-text {
+            font-weight: 600;
+            color: #4a4947;
+        }
+
+        .reviews-count {
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            margin-bottom: 80px;
+        }
+
+        .image-section {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .hero-image:hover {
+            transform: scale(1.05);
+        }
+
+        .form-section {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group.full-width {
+            grid-column: 1 / -1;
+        }
+
+        .form-label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 12px;
+            font-weight: 500;
+            color: #4a4947;
+            font-size: 1rem;
+        }
+
+        .form-icon {
+            font-size: 1.1rem;
+            color: #d4837a;
+        }
+
+        .form-input, .form-textarea {
+            padding: 15px 20px;
+            border: 2px solid rgba(212, 131, 122, 0.2);
+            border-radius: 12px;
+            font-size: 1rem;
+            background: rgba(255, 255, 255, 0.9);
+            transition: all 0.3s ease;
+            font-family: inherit;
+        }
+
+        .form-input:focus, .form-textarea:focus {
+            outline: none;
+            border-color: #d4837a;
+            box-shadow: 0 0 0 3px rgba(212, 131, 122, 0.1);
+            transform: translateY(-1px);
+        }
+
+        .form-textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .testimonial-section {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.6);
+            padding: 40px;
+            border-radius: 20px;
+            margin-bottom: 40px;
+            border-left: 4px solid #d4837a;
+        }
+
+        .testimonial-quote {
+            font-size: 1.3rem;
+            font-style: italic;
+            color: #4a4947;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: #d4837a;
+        }
+
+        .name-section {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .submit-button {
+            background: linear-gradient(135deg, #d4837a 0%, #c67169 100%);
+            color: white;
+            padding: 18px 40px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(212, 131, 122, 0.3);
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .submit-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 35px rgba(212, 131, 122, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .form-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .rating-section {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .container {
+                padding: 20px 15px;
+            }
+            
+            .form-section, .name-section {
+                margin: 0 -15px;
+                border-radius: 20px 20px 0 0;
+            }
+        }
+
+        .floating-elements {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            pointer-events: none;
+            overflow: hidden;
+        }
+
+        .floating-flower {
+            position: absolute;
+            opacity: 0.1;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .floating-flower:nth-child(1) {
+            top: 10%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .floating-flower:nth-child(2) {
+            top: 70%;
+            right: 10%;
+            animation-delay: 2s;
+        }
+
+        .floating-flower:nth-child(3) {
+            top: 40%;
+            left: 5%;
+            animation-delay: 4s;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(5deg); }
+        }
+
+        .floating-whatsapp {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        .floating-whatsapp img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .floating-whatsapp img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+        }
+
+        /* Footer Styles */
+        .footer {
+            background: linear-gradient(135deg, #4a4947 0%, #3a3937 100%);
+            color: #f5f1eb;
+            padding: 60px 0 20px 0;
+            margin-top: 80px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+        }
+
+        .footer-section h3 {
+            color: #d4837a;
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .footer-section p, .footer-section li {
+            color: #c1bdb8;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section a {
+            color: #c1bdb8;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: #d4837a;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .footer-logo img {
+            width: 50px;
+            height: auto;
+        }
+
+        .footer-logo-text {
+            font-size: 1.5rem;
+            font-weight: 300;
+            color: #d4837a;
+            letter-spacing: 1px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            background: rgba(212, 131, 122, 0.2);
+            border-radius: 50%;
+            color: #d4837a;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            background: #d4837a;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .contact-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .contact-icon {
+            color: #d4837a;
+            font-size: 1.1rem;
+            width: 20px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(212, 131, 122, 0.2);
+            margin-top: 40px;
+            padding-top: 20px;
+            text-align: center;
+            color: #8b8680;
+            font-size: 0.9rem;
+        }
+
+        .footer-bottom a {
+            color: #d4837a;
+            text-decoration: none;
+        }
+
+        .footer-bottom a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+                text-align: center;
+            }
+            
+            .footer {
+                padding: 40px 0 20px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="floating-elements">
+        <div class="floating-flower">🌸</div>
+        <div class="floating-flower">🌹</div>
+        <div class="floating-flower">🌺</div>
+    </div>
+
+    <div class="container">
+        <div class="logo-section">
+            <img src="assets/oniria.png" alt="Oniria Logo" style="width: 120px; height: auto; margin-bottom: 20px;">
+            <div style="text-align: center; margin-bottom: 30px;">
+                <h1 style="font-size: 2.5rem; font-weight: 300; color: #8B4513; margin: 0; letter-spacing: 2px;">ONIRIA</h1>
+                <p style="font-size: 1rem; color: #8B4513; margin: 5px 0 0 0; letter-spacing: 1px;">FLORES & LOVERS</p>
+            </div>
+        </div>
+        
+        <div class="hero-section">
+            <h1 class="main-title">Díselo con flores: elige, personaliza y sorprende</h1>
+            <p class="hero-subtitle">Haz que cada momento sea inolvidable con un detalle único y lleno de amor.</p>
+            <button class="cta-button">
+                Descubre el pack de Primavera 
+                <span>→</span>
+            </button>
+        </div>
+
+        <div class="rating-section">
+            <span class="google-logo">G</span>
+            <div class="rating-stars">
+                <span class="rating-text">4.8</span>
+                <div class="stars">★★★★★</div>
+            </div>
+            <span class="reviews-count">(1.200 reseñas verificadas)</span>
+        </div>
+
+        <div class="main-content">
+            <div class="image-section">
+                <img src="assets/pareja_rubio_ONIRIA.png" alt="Pareja feliz con flores" class="hero-image">
+            </div>
+
+            <div class="form-section">
+                <form>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label class="form-label">
+                                <span class="form-icon">📅</span>
+                                Fecha de entrega
+                            </label>
+                            <input type="date" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">
+                                <span class="form-icon">✉️</span>
+                                Mensaje personalizado
+                            </label>
+                            <textarea class="form-textarea" placeholder="Escribe aquí tu mensaje especial..."></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">
+                            <span class="form-icon">👤</span>
+                            Nombre
+                        </label>
+                        <input type="text" class="form-input" placeholder="Tu nombre completo" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">
+                            <span class="form-icon">📍</span>
+                            Dirección de entrega
+                        </label>
+                        <input type="text" class="form-input" placeholder="Tu dirección" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">
+                            <span class="form-icon">💳</span>
+                            Método de pago
+                        </label>
+                        <select class="form-input">
+                            <option value="tarjeta">Tarjeta de crédito/débito</option>
+                            <option value="paypal">PayPal</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="submit-button">
+                        Personalizar mi ramo 🌹
+                    </button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="testimonial-section">
+            <p class="testimonial-quote">"Me traslada a un campo lleno de mis flores favoritas."</p>
+            <p class="testimonial-author">Marta G. (Madrid)</p>
+        </div>
+
+        <div class="name-section">
+            <div class="form-group">
+                <label class="form-label">
+                    <span class="form-icon">👤</span>
+                    Nombre
+                </label>
+                <input type="text" class="form-input" placeholder="Tu nombre completo" required>
+            </div>
+            <button type="submit" class="submit-button">
+                Personalizar mi ramo 🌹
+            </button>
+        </div>
+
+        <div class="floating-whatsapp">
+            <a href="https://wa.me/1234567890" target="_blank">
+                <img src="assets/whatsapp.png" alt="WhatsApp">
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <img src="assets/oniria.png" alt="Oniria Logo">
+                    <div class="footer-logo-text">ONIRIA</div>
+                </div>
+                <p>Creamos momentos únicos y memorables con los arreglos florales más hermosos. Cada flor cuenta una historia de amor.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link" title="Facebook">📘</a>
+                    <a href="#" class="social-link" title="Instagram">📷</a>
+                    <a href="#" class="social-link" title="Twitter">🐦</a>
+                    <a href="#" class="social-link" title="TikTok">🎵</a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Servicios</h3>
+                <ul>
+                    <li><a href="#">Ramos Personalizados</a></li>
+                    <li><a href="#">Arreglos para Eventos</a></li>
+                    <li><a href="#">Decoración Floral</a></li>
+                    <li><a href="#">Flores Preservadas</a></li>
+                    <li><a href="#">Entrega a Domicilio</a></li>
+                    <li><a href="#">Suscripción Mensual</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Información</h3>
+                <ul>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><a href="#">Cómo Funciona</a></li>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                    <li><a href="#">Política de Envíos</a></li>
+                    <li><a href="#">Cuidado de Flores</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <div class="contact-info">
+                    <span class="contact-icon">📍</span>
+                    <span>Calle de las Flores 123, Madrid</span>
+                </div>
+                <div class="contact-info">
+                    <span class="contact-icon">📞</span>
+                    <span>+34 912 345 678</span>
+                </div>
+                <div class="contact-info">
+                    <span class="contact-icon">✉️</span>
+                    <span>hola@oniria.es</span>
+                </div>
+                <div class="contact-info">
+                    <span class="contact-icon">🕐</span>
+                    <span>Lun-Dom: 8:00 - 22:00</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Oniria Flores & Lovers. Todos los derechos reservados. | 
+            <a href="#">Política de Privacidad</a> | 
+            <a href="#">Términos y Condiciones</a> | 
+            <a href="#">Cookies</a></p>
+            <p style="margin-top:24px; color:#d4837a; font-size:0.95rem; font-weight:500;">
+                NOTA MUY IMPORTANTE: Esta página es un ejercicio realizado por Araceli Fradejas Muñoz como parte de la entrega del Trabajo Final de la Asignatura de E-Commerce del Máster en Marketing Digital y Analytics + Máster en IA Empresarial de la escuela ENEB.<br>
+                <span style="color:#c1bdb8; font-size:0.92rem; font-weight:400;">IMPORTANT NOTE: This page is an exercise created by Araceli Fradejas Muñoz as part of the final project for the E-Commerce subject of the Master in Digital Marketing and Analytics + Master in Business AI at ENEB School.</span>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Animación suave para los botones
+        document.querySelectorAll('button').forEach(button => {
+            button.addEventListener('click', function(e) {
+                let ripple = document.createElement('span');
+                ripple.classList.add('ripple');
+                this.appendChild(ripple);
+                
+                setTimeout(() => {
+                    ripple.remove();
+                }, 300);
+            });
+        });
+
+        // Validación del formulario
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('¡Gracias! Tu pedido personalizado ha sido enviado. Te contactaremos pronto para confirmar los detalles.');
+        });
+
+        // Efecto de typing para el título
+        const title = document.querySelector('.main-title');
+        const text = title.textContent;
+        title.textContent = '';
+        
+        let i = 0;
+        function typeWriter() {
+            if (i < text.length) {
+                title.textContent += text.charAt(i);
+                i++;
+                setTimeout(typeWriter, 50);
+            }
+        }
+        
+        setTimeout(typeWriter, 500);
+    </script>
+</body>
+</html>
