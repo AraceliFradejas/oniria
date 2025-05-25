@@ -1,7 +1,4 @@
 # 💐 Oniria - Landing Page de Floristería / Flower Shop Landing Page
-
-assets/oniria.png
-
 ---
 
 ## 📌 Español
