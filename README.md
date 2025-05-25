@@ -1,6 +1,6 @@
 # 💐 Oniria - Landing Page de Floristería / Flower Shop Landing Page
 
-![Oniria Banner](https://via.placeholder.com/900x200?text=Oniria+-+Flores+%26+Lovers)
+assets/oniria.png
 
 ---
 
